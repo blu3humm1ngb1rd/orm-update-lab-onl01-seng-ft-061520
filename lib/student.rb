@@ -58,9 +58,9 @@ class Student
   
   def self.new_from_db(array)
     
-    student.id = array[0]
-    student.name = array[1]
-    student.grade = array[2]
+    id = array[0]
+    name = array[1]
+    grade = array[2]
     student = self.new 
     student 
   end 
