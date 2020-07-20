@@ -47,7 +47,7 @@ class Student
      SET name = ?, grade = ?
      SQL
      
-     DB[:conn].execute(sql, )
+     DB[:conn].execute(sql, self.name, self.grade, self.id)
   end 
   
   def self.create 
