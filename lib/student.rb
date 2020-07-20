@@ -46,6 +46,8 @@ class Student
      UPDATE students 
      SET name = ?, grade = ?
      SQL
+     
+     DB[:conn]
   end 
   
   def self.create 
