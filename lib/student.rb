@@ -34,7 +34,7 @@ class Student
     VALUES (?, ?)
     SQL
     DB[:conn].execute(sql, self.name, self.grade)
-    @id = DB[:conn].execute("SELECT MAX(ID)"
+    @id = DB[:conn].execute("SELECT MAX(ID) AS "
   end 
   
   def self.create 
