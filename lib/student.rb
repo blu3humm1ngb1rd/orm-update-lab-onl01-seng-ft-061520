@@ -29,8 +29,9 @@ class Student
   end 
   
   def save
-    if self.id 
-      self.update 
+    sql = <<-SQL
+    SQL
+    DB[:conn].execute(sql)
   end 
   
   def self.create 
